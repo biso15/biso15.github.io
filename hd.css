@@ -1,0 +1,45 @@
+        #hd { width:100%; height:77px; position:relative; }
+        
+        #hd .menu_box { width:20%; position:absolute; height:100%; padding:6%; box-sizing:border-box;
+            z-index:30; }
+        #hd .menu { display:block; width:100%; height:100%; overflow:hidden; }
+        #hd .menu img { display:block; width:300%; margin-top:10%; }
+        
+        #m_ck:checked ~ .wrap { overflow:hidden; }
+        #m_ck:checked ~ .wrap #hd ul { margin-left:0; }
+        #m_ck:checked ~ .wrap #hd .close_bg { margin-left:0; }
+        #m_ck:checked ~ .wrap #hd .menu_box { background:#c7b09f; }
+        #m_ck:checked ~ .wrap #hd .menu img { margin-left:-100%; }
+        
+        #hd .logo { display:block; position:relative; width:70%; height:100%; margin:0 auto; }
+        #hd .logo img { display:block; position:absolute; width:71%; top:50%; left:50%; 
+            transform:translate(-50%,-50%); }
+        
+        #hd > ul { background:#c7b09f; position:absolute; left:0; width:80%; height:770%;
+            text-indent:2%; margin-left:-100%; z-index:30; padding-top:3%; }
+        #hd > ul > li { border-bottom:2px solid #948070; box-sizing:border-box; }
+        #hd ul li { margin:0 5%; }
+        #hd ul ul { display:none; }
+        #hd ul a { color:#948070; line-height:2.5; }
+        #hd ul label { display:block; box-sizing:border-box; color:#948070; line-height:2.5; 
+            position:relative; }
+        #hd .last { border:none; }
+        #hd .sub_box { position:absolute; right:0; width:7%; top:50%; overflow:hidden; 
+            transform:translate(-40%,-50%); }
+        #hd ul img { display:block; width:200%; }        
+        
+        #m_ra1:checked ~ ul .la1 { border-bottom:2px solid #948070; background:#ab8971; color:#eee; margin:0; }
+        #m_ra1:checked ~ ul .la1 img { margin-left:-100%; }
+        #m_ra1:checked ~ ul .la1 ~ ul { display:block; }
+        #m_ra2:checked ~ ul .la2 { border-bottom:2px solid #948070; background:#ab8971; color:#eee;  }
+        #m_ra2:checked ~ ul .la2 img { margin-left:-100%; }
+        #m_ra2:checked ~ ul .la2 ~ ul { display:block; }
+        #m_ra3:checked ~ ul .la3 { border-bottom:2px solid #948070; background:#ab8971; color:#eee;  }
+        #m_ra3:checked ~ ul .la3 img { margin-left:-100%; }
+        #m_ra3:checked ~ ul .la3 ~ ul { display:block; }
+        
+        #hd .close_bg { width:20%; position:absolute; height:770%; left:80%;  
+            background:rgba(199,176,159,0.7); padding:2% 7%; 
+            box-sizing:border-box; margin-left:-100%; z-index:30; }
+        #hd .close { display:block; width:100%; overflow:hidden; }
+        #hd .close img { display:block; width:300%; margin-left:-200%; }

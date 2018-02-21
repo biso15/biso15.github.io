@@ -1,0 +1,10 @@
+.boardArticle table { width:100%; }
+
+.boardArticle th { padding:2% 0; border-top:2px solid #666; border-bottom:1px solid #666; }
+
+.boardArticle td { padding:3% 0; border-bottom:1px solid #666}
+.boardArticle .no { width:10%; text-align:center; }
+.boardArticle .title {}
+.boardArticle .author { width:20%; text-align:center; }
+.boardArticle .date { width:20%; text-align:center; }
+.boardArticle .hit { width:10%; text-align:center; }

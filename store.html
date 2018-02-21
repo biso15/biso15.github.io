@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, uesr-scalable=no">
+    <!-- 기계 크기에 맞게 렌더링 해줌 -->
+    <title>애슐리에 오신 것을 환영합니다.</title>
+    <meta name="subject" content="애슐리 소개 사이트">
+    <meta name="title" content="애슐리">
+    <meta name="keyword" content="애슐리, ashley, 스테이크, 샐러드바, 레스토랑">
+    <meta http-equiv="author" content="Ji_Hye">
+    <script type="text/javascript">
+    // 주소창 자동 닫힘
+    window.addeventlistener("load", function(){
+        settimeout(loaded, 100);
+    }, false);
+        
+    function loaded() {
+        window.scrollto(0, 1);
+    }
+    </script>
+    <link rel="stylesheet" href="common.css">
+    <link rel="stylesheet" href="hd.css">
+    <style>
+        
+        .wrap{ width:100%; height:100%; background:#f3eee3; }
+        
+        #top_nav { width:100%; height:6.5%; background-image:url("img/store/bg.jpg"); 
+            background-size:100%; position:relative; }
+        #top_nav p { position:absolute; top:50%; left:50%; transform:translate(-50%,-50%); 
+            color:#eee; font-weight:bold; }
+        
+        span { line-height:3; font-size:0.5rem; }
+        span:nth-of-type(1) { margin-left:8px; }
+        span:nth-of-type(2) { color:#F69147; }
+        
+        #page { width:100%; }
+        #map_canvas { margin-bottom:40px; }
+        #contact p { text-align:left; padding-left:30px; line-height:30px; margin-top:25px;
+            padding-right:25px; }
+        
+        #page2 { font-size:0.8rem; width:100%; text-align:center; margin-top:-8%; 
+            background:#f3eee3; height:20%; }
+        #page2 div { float:left; padding:3px; box-sizing:border-box; }
+        #page2 .ti { width:20%; clear:both; background:#828D68; border:1px solid #647446; 
+            box-sizing:border-box; color:#eee; }
+        #page2 .co { width:80%; border:1px solid #647446; box-sizing:border-box; color:#333; }
+        
+    </style>
+    
+    <script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script> 
+    
+    <script> 
+    function initialize() {
+      var myLatlng = new google.maps.LatLng(37.511456, 127.098017);
+      var mapOptions = {
+        zoom: 14,
+        center: myLatlng
+      }
+      var map = new google.maps.Map(document.getElementById('map_canvas'), mapOptions);
+
+      var marker = new google.maps.Marker({
+          position: myLatlng,
+          map: map,
+          title: '애슐리'
+      });
+    }
+
+    google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
+     
+    <link rel="stylesheet" href="ft.css">
+</head>
+<body onload="initialize()">
+    <input type="checkbox" id="m_ck">
+    <div class="wrap">
+        <header id="hd">  
+            <div class="menu_box">
+                <label for="m_ck" class="menu">
+                    <img src="img/sub1/menu_1.png" alt="menu">
+                </label>
+            </div>
+            
+            <a href="index.html" class="logo">
+                <img src="img/main/logo2.png" alt="logo">
+            </a>
+            
+            <input type="radio" id="m_ra1" name="m_ra">
+            <input type="radio" id="m_ra2" name="m_ra">
+            <input type="radio" id="m_ra3" name="m_ra">
+            <ul>
+                <li>
+                    <label for="m_ra1" class="la1">매장안내
+                        <div class="sub_box"><img src="img/sub1/menu_11.png" alt="menu"></div>
+                    </label>
+                    <ul>
+                        <li>
+                            <a href="sub1.html">CLASSIC</a>
+                        </li>
+                        <li>
+                            <a href="sub2.html">W</a>
+                        </li>
+                        <li>
+                            <a href="sub3.html">A Lab</a>
+                        </li>                       
+                        <li class="last">
+                            <a href="sub4.html">QUEENS</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="store.html">매장찾기</a>
+                </li>
+                <li>
+                    <a href="board/list.php">공지사항</a>
+                </li>
+                <li>
+                    <label for="m_ra2" class="la2">멤버십
+                        <div class="sub_box"><img src="img/sub1/menu_11.png" alt="menu"></div>
+                    </label>
+                    <ul>
+                        <li>
+                            <a href="member.html">멤버십 안내</a>
+                        </li>
+                        <li class="last">
+                            <a href="login_form.php">나의 멤버십</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="last">
+                    <label for="m_ra3" class="la3">상담신청
+                        <div class="sub_box"><img src="img/sub1/menu_11.png" alt="menu"></div>
+                    </label>
+                    <ul>                    
+                        <li>
+                            <a href="sms:010-6423-4234">sms</a>
+                        </li>
+                        <li>
+                            <a href="tel:010-6423-4234">tell</a>
+                        </li>
+                        <li class="last">
+                            <a href="mailto:biso15@naver.com">mail</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="close_bg">
+                <label for="m_ck" class="close">
+                    <img src="img/sub1/menu_1.png" alt="close">
+                </label>
+            </div>
+        </header>
+        
+        <nav id="top_nav">
+            <p>STORE GUIDE</p>
+        </nav>
+        
+        <span>홈  ></span>
+        <span>STORE</span>
+        
+        <section id="page">       
+            <div id="content">
+                <div class="content_wrap">
+                    <section class="row" id="contact">
+                        <article class="full_col h600" style="margin-bottom:50px;">
+            			<!-- API 지도 삽입 -->
+            			    <div id="map_canvas" style="width:100%; height:400px; "></div>
+			            </article>
+            		</section>
+                </div>
+            </div>
+        </section>
+        <section id="page2">
+                <div class="ti">주소</div>
+                <div class="co">서울 송파구 올림픽로 240, 롯데월드 웰빙센터 3층</div>
+                <div class="ti">전화번호</div>
+                <div class="co">02-6412-1031</div>
+                <div class="ti">영업시간</div>
+                <div class="co">AM11:00 ~ PM10:00(샐러드바 마감 PM 09:30)</div>
+                <div class="ti">주차여부</div>
+                <div class="co">*롯데월드 주차장만 해당, 롯데몰 주차불가</div>
+        </section>
+        
+        <footer id="ft">
+            <p class="copyright">Copyrightⓒ2018 Ji_Hye</p>
+        </footer>
+    </div>
+
+</body>
+</html>

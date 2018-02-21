@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, uesr-scalable=no">
+    <!-- 기계 크기에 맞게 렌더링 해줌 -->
+    <title>애슐리에 오신 것을 환영합니다.</title>
+    <meta name="subject" content="애슐리 소개 사이트">
+    <meta name="title" content="애슐리">
+    <meta name="keyword" content="애슐리, ashley, 스테이크, 샐러드바, 레스토랑">
+    <meta http-equiv="author" content="Ji_Hye">
+    <script type="text/javascript">
+    // 주소창 자동 닫힘
+    window.addeventlistener("load", function(){
+        settimeout(loaded, 100);
+    }, false);
+        
+    function loaded() {
+        window.scrollto(0, 1);
+    }
+    </script>
+    <link rel="stylesheet" href="common.css">
+    <style>
+        
+        .wrap{ width:100%; height:100%; background:#f3eee3; }
+        
+        #hd { width:100%; height:12%; }
+        #hd .logo { display:block; position:relative; width:70%; height:100%; margin:0 auto; }
+        #hd .logo img { display:block; position:absolute; width:71%; top:50%; left:50%; 
+            transform:translate(-50%,-50%); }
+        
+        [class*=ban] img { display:block; width:100%; }
+        
+        .sub { width:100%; }
+        .sub li { width:50%; float:left; }
+        .sub img { display:block; width:100%; }
+        
+        .icon { width:100%; height:12%; }
+        .icon li { width:25%; float:left; overflow:hidden; padding:2.3%; box-sizing:border-box; }
+        .icon li:nth-of-type(1), .icon li:nth-of-type(3) { background:#cab3a1; }
+        .icon img { display:block; width:400%; }
+        .icon .l2 { margin-left:-202%; }
+        .icon .l3 { margin-left:-300%; }
+        .icon .l4 { margin-left:-100%; }
+        
+    </style>
+    <link rel="stylesheet" href="ft.css">
+</head>
+<body>
+    <div class="wrap">
+        <header id="hd">
+            <a href="index.html" class="logo">
+                <img src="img/main/logo2.png" alt="logo">
+            </a>
+        </header>
+        
+        <a href="sub121.html" class="ban1">
+            <img src="img/main/b3_1.jpg" alt="배너이미지1">
+        </a>
+        <a href="sub221.html" class="ban2">
+            <img src="img/main/b2_1.jpg" alt="배너이미지2">
+        </a>
+        
+        <ul class="sub">
+            <li>
+                <a href="sub1.html" class="l1">
+                    <img src="img/main/1_1.jpg" alt="CLASSIC">
+                </a>
+            </li>
+            <li>
+                <a href="sub2.html" class="l2">
+                    <img src="img/main/2_1.jpg" alt="W">
+                </a>
+            </li>
+            <li>
+                <a href="#" class="l3">
+                    <img src="img/main/3_1.jpg" alt="A_Lab">
+                </a>
+            </li>
+            <li>
+                <a href="#" class="l4">
+                    <img src="img/main/4_1.jpg" alt="QUEENS">
+                </a>
+            </li>
+        </ul>
+        
+        <ul class="icon">
+            <li>
+                <a href="store.html">
+                    <img src="img/main/icon.png" alt="store" class="l1">
+                </a>
+            </li>
+            <li>
+                <a href="sms:010-6423-4234">
+                    <img src="img/main/icon.png" alt="sms" class="l2">
+                </a>
+            </li>
+            <li>
+                <a href="tel:010-6423-4234">
+                    <img src="img/main/icon.png" alt="tel" class="l3">
+                </a>
+            </li>
+            <li>
+                <a href="mailto:biso15@naver.com">
+                    <img src="img/main/icon.png" alt="mail" class="l4">
+                </a>
+            </li>
+        </ul>
+        
+        <footer id="ft">
+            <p class="copyright">Copyrightⓒ2018 Ji_Hye</p>
+        </footer>
+    </div>
+
+</body>
+</html>

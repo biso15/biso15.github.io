@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, uesr-scalable=no">
+    <!-- 기계 크기에 맞게 렌더링 해줌 -->
+    <title>애슐리에 오신 것을 환영합니다.</title>
+    <meta name="subject" content="애슐리 소개 사이트">
+    <meta name="title" content="애슐리">
+    <meta name="keyword" content="애슐리, ashley, 스테이크, 샐러드바, 레스토랑">
+    <meta http-equiv="author" content="Ji_Hye">
+    <script type="text/javascript">
+    // 주소창 자동 닫힘
+    window.addeventlistener("load", function(){
+        settimeout(loaded, 100);
+    }, false);
+        
+    function loaded() {
+        window.scrollto(0, 1);
+    }
+    </script>
+    <link rel="stylesheet" href="common.css">
+    <link rel="stylesheet" href="hd.css">
+    <style>
+        
+        .wrap{ width:100%; height:100%; background:#f3eee3; }
+        
+        #top_nav { width:100%; }
+        #top_nav ul { width:100%; }
+        #top_nav li { width:25%; float:left; }
+        #top_nav img { width:100%; display:block; }
+        
+        #sub_nav { width:100%; height:6.5%; clear:both; }
+        #sub_nav ul { height:100%; width:100%; }
+        #sub_nav li { width:50%; float:left; height:100%; background:#eee; 
+            position:relative; }
+        #sub_nav a { position:absolute; display:block; color:#666; font-size:0.7rem; 
+            top:50%; left:50%; transform:translate(-50%,-50%); }
+        #sub_nav .sel { background:#cdcccb; }
+        #sub_nav .sel a { font-weight:bold; }
+        
+        span { line-height:3; font-size:0.5rem; }
+        span:nth-of-type(1) { margin-left:8px; }
+        span:nth-of-type(2) { color:#F69147; }
+        
+        #page { width:100%; }
+        #page img { display:block; width:100%; margin-bottom:3px; }
+        
+        
+    </style>
+    <link rel="stylesheet" href="ft.css">
+</head>
+<body>
+    <input type="checkbox" id="m_ck">
+    <div class="wrap">
+        <header id="hd">            
+            <div class="menu_box">
+                <label for="m_ck" class="menu">
+                    <img src="img/sub1/menu_1.png" alt="menu">
+                </label>
+            </div>
+            
+            <a href="index.html" class="logo">
+                <img src="img/main/logo2.png" alt="logo">
+            </a>
+            
+            <input type="radio" id="m_ra1" name="m_ra">
+            <input type="radio" id="m_ra2" name="m_ra">
+            <input type="radio" id="m_ra3" name="m_ra">
+            <ul>
+                <li>
+                    <label for="m_ra1" class="la1">매장안내
+                        <div class="sub_box"><img src="img/sub1/menu_11.png" alt="menu"></div>
+                    </label>
+                    <ul>
+                        <li>
+                            <a href="sub1.html">CLASSIC</a>
+                        </li>
+                        <li>
+                            <a href="sub2.html">W</a>
+                        </li>
+                        <li>
+                            <a href="sub3.html">A Lab</a>
+                        </li>                       
+                        <li class="last">
+                            <a href="sub4.html">QUEENS</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="store.html">매장찾기</a>
+                </li>
+                <li>
+                    <a href="board/list.php">공지사항</a>
+                </li>
+                <li>
+                    <label for="m_ra2" class="la2">멤버십
+                        <div class="sub_box"><img src="img/sub1/menu_11.png" alt="menu"></div>
+                    </label>
+                    <ul>
+                        <li>
+                            <a href="member.html">멤버십 안내</a>
+                        </li>
+                        <li class="last">
+                            <a href="login_form.php">나의 멤버십</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="last">
+                    <label for="m_ra3" class="la3">상담신청
+                        <div class="sub_box"><img src="img/sub1/menu_11.png" alt="menu"></div>
+                    </label>
+                    <ul>                    
+                        <li>
+                            <a href="sms:010-6423-4234">sms</a>
+                        </li>
+                        <li>
+                            <a href="tel:010-6423-4234">tell</a>
+                        </li>
+                        <li class="last">
+                            <a href="mailto:biso15@naver.com">mail</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="close_bg">
+                <label for="m_ck" class="close">
+                    <img src="img/sub1/menu_1.png" alt="close">
+                </label>
+            </div>
+        </header>
+        
+        <nav id="top_nav">
+            <ul>
+                <li><a href="sub1.html"><img src="img/main/1_1.jpg" alt="CLASSIC"></a></li>
+                <li><a href="sub2.html"><img src="img/main/2_1.jpg" alt="W"></a></li>
+                <li><a href="sub3.html"><img src="img/main/3_1.jpg" alt="A_Lab"></a></li>
+                <li><a href="sub4.html"><img src="img/main/4_1.jpg" alt="QUEENS"></a></li>
+            </ul>
+        </nav>
+        
+           <nav id="sub_nav">
+            <ul>
+                <li class="sel"><a href="sub3.html">A Lab 소개</a></li>
+                <li><a href="sub32.html">A Lab 메뉴</a></li>
+            </ul>
+        </nav>
+        
+        <span>홈  >  A Lab  ></span>
+        <span>A Lab 소개</span>
+        
+        <section id="page">
+            <img src="img/sub3/wp_main_img.jpg" alt="img">
+            <img src="img/sub3/Untitled-2.jpg" alt="price">
+        </section>
+        
+        <footer id="ft">
+            <p class="copyright">Copyrightⓒ2018 Ji_Hye</p>
+        </footer>
+    </div>
+
+</body>
+</html>
